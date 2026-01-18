@@ -1,0 +1,122 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply antialiased;
+  }
+  
+  ::selection {
+    @apply bg-sunflower-400 text-gray-900;
+  }
+}
+
+@layer components {
+  .section-padding {
+    @apply px-4 sm:px-6 lg:px-8 py-16 md:py-24;
+  }
+  
+  .container-width {
+    @apply max-w-7xl mx-auto;
+  }
+  
+  .btn-primary {
+    @apply inline-flex items-center justify-center px-6 py-3 
+           bg-sunflower-500 hover:bg-sunflower-400 
+           text-gray-900 font-semibold rounded-lg
+           transition-all duration-300 ease-out
+           shadow-lg shadow-sunflower-500/25 hover:shadow-xl hover:shadow-sunflower-500/30
+           hover:-translate-y-0.5
+           focus:outline-none focus:ring-2 focus:ring-sunflower-500 focus:ring-offset-2;
+  }
+  
+  .btn-secondary {
+    @apply inline-flex items-center justify-center px-6 py-3
+           bg-white hover:bg-gray-50
+           text-gray-900 font-semibold rounded-lg
+           border-2 border-gray-200 hover:border-sunflower-400
+           transition-all duration-300 ease-out
+           focus:outline-none focus:ring-2 focus:ring-sunflower-500 focus:ring-offset-2;
+  }
+  
+  .heading-1 {
+    @apply text-4xl md:text-5xl lg:text-6xl font-display font-bold text-gray-900 leading-tight;
+  }
+  
+  .heading-2 {
+    @apply text-3xl md:text-4xl font-display font-bold text-gray-900;
+  }
+  
+  .heading-3 {
+    @apply text-xl md:text-2xl font-display font-semibold text-gray-900;
+  }
+  
+  .text-body {
+    @apply text-base md:text-lg text-gray-600 leading-relaxed;
+  }
+}
+
+@layer utilities {
+  .animation-delay-100 {
+    animation-delay: 100ms;
+  }
+  .animation-delay-200 {
+    animation-delay: 200ms;
+  }
+  .animation-delay-300 {
+    animation-delay: 300ms;
+  }
+  .animation-delay-400 {
+    animation-delay: 400ms;
+  }
+  .animation-delay-500 {
+    animation-delay: 500ms;
+  }
+}
+
+/* Sunflower pattern for decorative elements */
+.sunflower-pattern {
+  background-image: radial-gradient(circle at 50% 50%, #FFE500 0%, #FFE500 30%, transparent 31%),
+                    radial-gradient(circle at 50% 50%, #FFC300 0%, #FFC300 20%, transparent 21%);
+  background-size: 20px 20px;
+  opacity: 0.1;
+}
+
+/* Gradient backgrounds */
+.gradient-sunflower {
+  background: linear-gradient(135deg, #FFFEF5 0%, #FFF9BF 50%, #FFFEF5 100%);
+}
+
+.gradient-hero {
+  background: 
+    radial-gradient(ellipse at top right, rgba(255, 229, 0, 0.15) 0%, transparent 50%),
+    radial-gradient(ellipse at bottom left, rgba(255, 195, 0, 0.1) 0%, transparent 50%),
+    linear-gradient(180deg, #FFFFFF 0%, #FFFEF5 100%);
+}
+
+/* Form focus states */
+input:focus, textarea:focus, select:focus {
+  @apply outline-none ring-2 ring-sunflower-500 border-transparent;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-100;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-sunflower-400 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-sunflower-500;
+}
