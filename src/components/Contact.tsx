@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, FormEvent } from 'react';
+import { useState, FormEvent, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { useLanguage } from '@/i18n/LanguageContext';
 import SunflowerIcon from './SunflowerIcon';
@@ -15,6 +15,21 @@ export default function Contact() {
   const { t, language } = useLanguage();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
+
+  // Check for 'gracias' parameter in URL on mount
+  useEffect(() => {
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.get('search_term')?.includes('gracias') || urlParams.get('gracias')) {
+      setSubmitStatus('success');
+      // Scroll to form section
+      setTimeout(() => {
+        const contactSection = document.getElementById('contact');
+        if (contactSection) {
+          contactSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      }, 100);
+    }
+  }, []);
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -36,6 +51,29 @@ export default function Contact() {
       if (response.ok) {
         setSubmitStatus('success');
         form.reset();
+
+        // Add 'search_term=gracias' parameter to URL for GA4 event tracking
+        // This matches the GA4 custom event condition: search_term contains "gracias"
+        const url = new URL(window.location.href);
+        url.searchParams.set('search_term', 'gracias');
+        window.history.pushState({}, '', url.toString());
+
+        // Trigger page_view event for GA4 to capture the URL change
+        // This ensures the custom event 'solicitud_de_contacto' fires
+        if (typeof window !== 'undefined' && (window as any).gtag) {
+          (window as any).gtag('event', 'page_view', {
+            page_path: url.pathname + url.search,
+            page_location: url.toString(),
+          });
+        }
+
+        // Scroll to success message
+        setTimeout(() => {
+          const contactSection = document.getElementById('contact');
+          if (contactSection) {
+            contactSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        }, 100);
       } else {
         setSubmitStatus('error');
       }
