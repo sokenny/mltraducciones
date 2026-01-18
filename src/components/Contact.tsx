@@ -9,7 +9,7 @@ import SunflowerIcon from './SunflowerIcon';
 // 1. Go to https://formspree.io/ and create a free account
 // 2. Create a new form and get your form ID (looks like: xyzabc123)
 // 3. Replace 'YOUR_FORMSPREE_ID' below with your actual form ID
-const FORMSPREE_ID = 'YOUR_FORMSPREE_ID';
+const FORMSPREE_ID = 'xgooaqpe';
 
 export default function Contact() {
   const { t, language } = useLanguage();
@@ -50,7 +50,7 @@ export default function Contact() {
     <section id="contact" className="relative overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 gradient-sunflower" />
-      
+
       {/* Decorative elements */}
       <div className="absolute top-20 left-10 opacity-10">
         <SunflowerIcon size={120} />
@@ -89,7 +89,7 @@ export default function Contact() {
                 <h3 className="text-xl font-display font-semibold mb-6">
                   María E. Lo Bianco
                 </h3>
-                
+
                 <div className="space-y-6">
                   <div className="flex items-start gap-4">
                     <div className="w-10 h-10 rounded-lg bg-sunflower-500 flex items-center justify-center flex-shrink-0">
@@ -160,7 +160,7 @@ export default function Contact() {
                 <form onSubmit={handleSubmit} className="space-y-6">
                   {/* Hidden field for language */}
                   <input type="hidden" name="_language" value={language} />
-                  
+
                   <div className="grid sm:grid-cols-2 gap-6">
                     <div>
                       <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
