@@ -47,6 +47,22 @@ export default function RootLayout({
   return (
     <html lang="es" className={`${outfit.variable} ${playfair.variable}`}>
       <head>
+        {/* Google tag (gtag.js) */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-KDQEHHVPYJ"
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-KDQEHHVPYJ');
+            `,
+          }}
+        />
+        {/* End Google tag */}
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
         <meta name="theme-color" content="#FFE500" />
       </head>
