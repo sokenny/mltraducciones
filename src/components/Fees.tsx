@@ -116,7 +116,7 @@ export default function Fees() {
               <div className="grid grid-cols-2 gap-4 relative z-10">
                 {[
                   { icon: '🏦', label: language === 'en' ? 'Banks' : 'Bancos' },
-                  { icon: '🏛️', label: language === 'en' ? 'Ministries' : 'Ministerios' },
+                  { icon: '🏛️', label: language === 'en' ? 'Government Bodies' : 'Organismos Públicos' },
                   { icon: '🎓', label: language === 'en' ? 'Universities' : 'Universidades' },
                   { icon: '⚖️', label: language === 'en' ? 'Law Firms' : 'Estudios Jurídicos' },
                   { icon: '🚢', label: language === 'en' ? 'Maritime' : 'Marítimas' },

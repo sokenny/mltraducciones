@@ -3,7 +3,7 @@ export const translations = {
     // Meta
     siteTitle: 'María E. Lo Bianco | Sworn Translator EN↔ES',
     siteDescription: 'Professional sworn translation services English-Spanish. Certified by CTPCBA. Legal, corporate, academic and personal document translation in Buenos Aires, Argentina.',
-    
+
     // Navigation
     nav: {
       about: 'About',
@@ -11,7 +11,7 @@ export const translations = {
       fees: 'Fees',
       contact: 'Contact',
     },
-    
+
     // Hero
     hero: {
       name: 'María E. Lo Bianco',
@@ -22,7 +22,7 @@ export const translations = {
       cta: 'Request a Free Quote',
       ctaSecondary: 'View Services',
     },
-    
+
     // About
     about: {
       title: 'About',
@@ -31,7 +31,7 @@ export const translations = {
       confidentiality: 'Confidentiality',
       confidentialityText: 'All documents and content provided are handled securely and with strict confidentiality.',
     },
-    
+
     // Services
     services: {
       title: 'Translation Services',
@@ -103,7 +103,7 @@ export const translations = {
       },
       urgency: 'Urgency and deadlines are carefully taken into account.',
     },
-    
+
     // Fees
     fees: {
       title: 'Quotes and Fees',
@@ -115,13 +115,13 @@ export const translations = {
         text: "The Sworn Translator's signature and seal are legalized by the CTPCBA. Upon request, the translator can handle the legalization process. Applicable fees charged by the CTPCBA apply.",
       },
     },
-    
+
     // Portfolio
     portfolio: {
       title: 'Professional Experience',
-      text: 'Clients range from individuals to small, medium, and large companies, both local and foreign, in the private and public sectors (including banks, ministries, academic institutions, universities, maritime companies, law firms, healthcare companies, publishers, and others).',
+      text: 'Clients range from individuals to small, medium, and large companies, both local and foreign, in the private and public sectors (including banks, government bodies, academic institutions, universities, maritime companies, law firms, healthcare companies, publishers, and others).',
     },
-    
+
     // Contact
     contact: {
       title: 'Contact',
@@ -148,25 +148,25 @@ export const translations = {
         error: 'There was an error sending your message. Please try again or contact me directly.',
       },
     },
-    
+
     // Footer
     footer: {
       rights: 'All rights reserved.',
       location: 'Buenos Aires, Argentina',
     },
-    
+
     // CTA
     cta: {
       quote: 'Get a Free Quote',
       contact: 'Contact Me',
     },
   },
-  
+
   es: {
     // Meta
     siteTitle: 'María E. Lo Bianco | Traductora Pública EN↔ES',
     siteDescription: 'Servicios profesionales de traducción pública Inglés-Español. Matriculada en el CTPCBA. Traducción de documentos legales, societarios, académicos y personales en Buenos Aires, Argentina.',
-    
+
     // Navigation
     nav: {
       about: 'Sobre mí',
@@ -174,7 +174,7 @@ export const translations = {
       fees: 'Honorarios',
       contact: 'Contacto',
     },
-    
+
     // Hero
     hero: {
       name: 'María E. Lo Bianco',
@@ -185,7 +185,7 @@ export const translations = {
       cta: 'Solicitar Cotización Gratuita',
       ctaSecondary: 'Ver Servicios',
     },
-    
+
     // About
     about: {
       title: 'Sobre mí',
@@ -194,7 +194,7 @@ export const translations = {
       confidentiality: 'Confidencialidad',
       confidentialityText: 'Todos los documentos y contenidos proporcionados se manejan de manera segura y con estricta confidencialidad.',
     },
-    
+
     // Services
     services: {
       title: 'Servicios de Traducción',
@@ -266,7 +266,7 @@ export const translations = {
       },
       urgency: 'La urgencia y los plazos se tienen especialmente en cuenta.',
     },
-    
+
     // Fees
     fees: {
       title: 'Cotizaciones y Honorarios',
@@ -278,13 +278,13 @@ export const translations = {
         text: 'La legalización de la firma y del sello del Traductor Público la realiza el CTPCBA. A solicitud del cliente, el traductor puede gestionar este trámite. Se aplican los aranceles correspondientes del CTPCBA.',
       },
     },
-    
+
     // Portfolio
     portfolio: {
       title: 'Experiencia Profesional',
-      text: 'Los clientes incluyen particulares y pequeñas, medianas y grandes empresas, nacionales y extranjeras, de los sectores público y privado, como bancos, ministerios, universidades, estudios jurídicos, empresas marítimas, de salud y editoriales.',
+      text: 'Los clientes incluyen particulares y pequeñas, medianas y grandes empresas, nacionales y extranjeras, de los sectores público y privado, como bancos, organismos públicos, universidades, estudios jurídicos, empresas marítimas, de salud y editoriales.',
     },
-    
+
     // Contact
     contact: {
       title: 'Contacto',
@@ -311,13 +311,13 @@ export const translations = {
         error: 'Hubo un error al enviar su mensaje. Por favor intente nuevamente o contácteme directamente.',
       },
     },
-    
+
     // Footer
     footer: {
       rights: 'Todos los derechos reservados.',
       location: 'Buenos Aires, Argentina',
     },
-    
+
     // CTA
     cta: {
       quote: 'Cotización Gratuita',
