@@ -18,8 +18,8 @@ export default function Contact() {
 
   // Check for 'gracias' parameter in URL on mount
   useEffect(() => {
-    const urlParams = new URLSearchParams(window.location.search);
-    if (urlParams.get('search_term')?.includes('gracias') || urlParams.get('gracias')) {
+    // Check if URL contains "gracias" (for GA4 page_location condition)
+    if (window.location.href.includes('gracias')) {
       setSubmitStatus('success');
       // Scroll to form section
       setTimeout(() => {
@@ -52,14 +52,15 @@ export default function Contact() {
         setSubmitStatus('success');
         form.reset();
 
-        // Add 'search_term=gracias' parameter to URL for GA4 event tracking
-        // This matches the GA4 custom event condition: search_term contains "gracias"
+        // Add 'gracias' parameter to URL for GA4 event tracking
+        // This matches the GA4 custom event condition: page_location contains "gracias"
         const url = new URL(window.location.href);
-        url.searchParams.set('search_term', 'gracias');
+        url.searchParams.set('gracias', '1');
         window.history.pushState({}, '', url.toString());
 
         // Trigger page_view event for GA4 to capture the URL change
         // This ensures the custom event 'solicitud_de_contacto' fires
+        // GA4 will see page_location contains "gracias" and trigger the custom event
         if (typeof window !== 'undefined' && (window as any).gtag) {
           (window as any).gtag('event', 'page_view', {
             page_path: url.pathname + url.search,
