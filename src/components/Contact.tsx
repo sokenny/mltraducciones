@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, FormEvent } from 'react';
+import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { useLanguage } from '@/i18n/LanguageContext';
 import SunflowerIcon from './SunflowerIcon';
@@ -163,9 +164,22 @@ export default function Contact() {
                   </div>
                 </div>
 
-                {/* Decorative sunflower */}
-                <div className="mt-12 flex justify-center opacity-20">
-                  <SunflowerIcon size={100} />
+                {/* CTPCBA QR verification */}
+                <div className="mt-10 flex flex-col items-center gap-3">
+                  <div className="bg-white rounded-xl p-3 shadow-lg">
+                    <Image
+                      src="/ctpcba-qr.png"
+                      alt={language === 'en' ? 'Scan to verify CTPCBA registration' : 'Escaneá para verificar matrícula CTPCBA'}
+                      width={120}
+                      height={120}
+                      className="rounded-lg"
+                    />
+                  </div>
+                  <p className="text-gray-400 text-xs text-center leading-snug max-w-[180px]">
+                    {language === 'en'
+                      ? 'Scan to verify active CTPCBA registration'
+                      : 'Escaneá para verificar matrícula activa en el CTPCBA'}
+                  </p>
                 </div>
               </div>
 
