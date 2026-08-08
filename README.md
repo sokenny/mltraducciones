@@ -59,6 +59,35 @@ That's it! All form submissions will be sent to your registered email.
 - Spam filtering
 - No credit card required
 
+### Spam Protection
+
+Two layers, both free:
+
+**1. Honeypot (already active, no setup)**
+
+The form includes a hidden `_gotcha` input. Real visitors never see it; naive bots fill it
+in and Formspree silently discards those submissions.
+
+**2. Cloudflare Turnstile (needs a one-time setup)**
+
+Turnstile is the invisible alternative to reCAPTCHA. Formspree verifies the token
+server-side, which also blocks bots that POST straight to the Formspree endpoint instead
+of using the website.
+
+1. Go to the [Cloudflare Turnstile dashboard](https://dash.cloudflare.com/?to=/:account/turnstile)
+   and create a widget for the site's domain. You get a **site key** and a **secret key**.
+2. In the Formspree form settings, open the **CAPTCHA** section, enable it, choose
+   **Cloudflare Turnstile**, and paste the **secret key**.
+3. Set the **site key** as `NEXT_PUBLIC_TURNSTILE_SITE_KEY` in the hosting provider's
+   environment variables (and in a local `.env.local` for development — see `.env.example`).
+4. Redeploy.
+
+Until step 3 is done the widget simply doesn't render and the form behaves as before, so
+enable the Formspree side and deploy the site key together.
+
+**Also worth doing in the Formspree dashboard:** restrict the form to the site's domain so
+submissions from anywhere else are rejected.
+
 ## Deployment
 
 This site is configured for static export, making it easy to deploy anywhere:

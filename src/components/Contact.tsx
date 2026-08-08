@@ -1,10 +1,11 @@
 'use client';
 
-import { useState, FormEvent } from 'react';
+import { useState, useRef, FormEvent } from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { useLanguage } from '@/i18n/LanguageContext';
 import SunflowerIcon from './SunflowerIcon';
+import Turnstile from './Turnstile';
 
 // IMPORTANT: Replace this with your actual Formspree form ID
 // 1. Go to https://formspree.io/ and create a free account
@@ -12,10 +13,14 @@ import SunflowerIcon from './SunflowerIcon';
 // 3. Replace 'YOUR_FORMSPREE_ID' below with your actual form ID
 const FORMSPREE_ID = 'xgooaqpe';
 
+// Optional: when unset the form still works, just without the bot challenge.
+const TURNSTILE_SITE_KEY = process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY;
+
 export default function Contact() {
   const { t, language } = useLanguage();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
+  const resetTurnstile = useRef<(() => void) | null>(null);
 
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
@@ -58,6 +63,8 @@ export default function Contact() {
       setSubmitStatus('error');
     } finally {
       setIsSubmitting(false);
+      // Turnstile tokens are single-use, so a new one is needed for any retry.
+      resetTurnstile.current?.();
     }
   };
 
@@ -189,6 +196,17 @@ export default function Contact() {
                   {/* Hidden field for language */}
                   <input type="hidden" name="_language" value={language} />
 
+                  {/* Honeypot: hidden from people, tempting to bots. Formspree drops any
+                      submission where this is filled in. */}
+                  <input
+                    type="text"
+                    name="_gotcha"
+                    tabIndex={-1}
+                    autoComplete="off"
+                    aria-hidden="true"
+                    className="hidden"
+                  />
+
                   <div className="grid sm:grid-cols-2 gap-6">
                     <div>
                       <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
@@ -290,6 +308,14 @@ export default function Contact() {
                       </svg>
                       {t.contact.form.error}
                     </motion.div>
+                  )}
+
+                  {TURNSTILE_SITE_KEY && (
+                    <Turnstile
+                      siteKey={TURNSTILE_SITE_KEY}
+                      language={language}
+                      resetRef={resetTurnstile}
+                    />
                   )}
 
                   <button
