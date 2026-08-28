@@ -18,11 +18,11 @@ export default function Header() {
   }, []);
 
   const navItems = [
-    { href: '#about', label: t.nav.about },
-    { href: '#services', label: t.nav.services },
-    { href: '#fees', label: t.nav.fees },
+    { href: '/#about', label: t.nav.about },
+    { href: '/#services', label: t.nav.services },
+    { href: '/#fees', label: t.nav.fees },
     { href: '/blog', label: t.nav.blog },
-    { href: '#contact', label: t.nav.contact },
+    { href: '/#contact', label: t.nav.contact },
   ];
 
   return (
@@ -87,7 +87,7 @@ export default function Header() {
             </div>
 
             {/* CTA Button - Desktop */}
-            <a href="#contact" className="hidden lg:inline-flex btn-primary text-sm">
+            <a href="/#contact" className="hidden lg:inline-flex btn-primary text-sm">
               {t.cta.quote}
             </a>
 
@@ -145,7 +145,7 @@ export default function Header() {
                 </a>
               ))}
               <a
-                href="#contact"
+                href="/#contact"
                 onClick={() => setIsMobileMenuOpen(false)}
                 className="block btn-primary text-center mt-4"
               >

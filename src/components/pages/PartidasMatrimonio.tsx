@@ -34,7 +34,7 @@ const ES = {
   deathNote:
     'Nota: también se traducen partidas/actas de defunción cuando corresponda al trámite. Consulte por su caso puntual.',
   cta: 'Solicitar cotización gratuita',
-  crossTitle: 'Otras páginas que te pueden servir',
+  crossTitle: 'Otras páginas que le pueden servir',
   crossA: 'Traducción pública de título universitario y certificado analítico',
   crossB: 'Traducción pública, legalización CTPCBA y apostilla: el orden del trámite',
   breadcrumbBlog: 'Blog',
