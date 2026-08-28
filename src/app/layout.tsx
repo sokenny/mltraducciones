@@ -16,6 +16,7 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://www.ml-traducciones.com'),
   title: 'María E. Lo Bianco | Sworn Translator EN↔ES | Traductora Pública',
   description: 'Professional sworn translation services English-Spanish. Certified by CTPCBA. Legal, corporate, academic and personal document translation. | Servicios de traducción pública Inglés-Español. Matriculada CTPCBA.',
   keywords: 'sworn translator, traductora pública, translation services, servicios de traducción, English Spanish, inglés español, CTPCBA, Buenos Aires, Argentina, legal translation, traducción legal',
@@ -32,6 +33,7 @@ export const metadata: Metadata = {
     follow: true,
   },
   alternates: {
+    canonical: '/',
     languages: {
       'en': '/',
       'es': '/',
