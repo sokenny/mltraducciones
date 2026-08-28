@@ -9,6 +9,7 @@ export const translations = {
       about: 'About',
       services: 'Services',
       fees: 'Fees',
+      blog: 'Blog',
       contact: 'Contact',
     },
 
@@ -172,6 +173,7 @@ export const translations = {
       about: 'Sobre mí',
       services: 'Servicios',
       fees: 'Honorarios',
+      blog: 'Blog',
       contact: 'Contacto',
     },
 
