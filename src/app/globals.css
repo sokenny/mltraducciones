@@ -56,6 +56,10 @@
     @apply text-xl md:text-2xl font-display font-semibold text-gray-900;
   }
   
+  .heading-4 {
+    @apply text-lg md:text-xl font-display font-semibold text-gray-900;
+  }
+  
   .text-body {
     @apply text-base md:text-lg text-gray-600 leading-relaxed;
   }
