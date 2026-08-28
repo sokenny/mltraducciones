@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   description:
     'En Argentina la figura legal es traducción pública (Ley 20.305 / CTPCBA). Diferencias con “traducción jurada”, legalización digital vs ológrafa y apostilla. Cómo es el orden del trámite.',
   alternates: {
+    canonical: '/traduccion-publica-legalizacion-ctpcba/',
     languages: {
       en: '/traduccion-publica-legalizacion-ctpcba',
       es: '/traduccion-publica-legalizacion-ctpcba',
@@ -21,6 +22,8 @@ export const metadata: Metadata = {
       'Qué certifica el CTPCBA, pública vs simple, legalización digital/ológrafa y apostilla. Sin vender apostillas.',
     type: 'article',
     locale: 'es_AR',
+    url: 'https://www.ml-traducciones.com/traduccion-publica-legalizacion-ctpcba/',
+    images: ['/favicon.svg'],
   },
 };
 

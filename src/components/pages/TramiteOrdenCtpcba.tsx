@@ -11,7 +11,7 @@ const ES = {
     'En la Argentina, la figura legal es la traducción pública (Ley 20.305). Las traducciones públicas las realizan traductores/as públicos/as matriculados/as y se certifican con firma y sello. El CTPCBA legaliza esa firma y ese sello. Si el documento –o la legalización del Colegio– viaja al exterior, puede requerir apostilla por TAD. A continuación, una guía práctica.',
   publicVsSwornTitle: '“Pública” en Argentina vs “jurada” en España',
   publicVsSwornBody:
-    'En Argentina la denominación es traducción pública (Ley 20.305, CTPCBA en CABA). “Traducción jurada” es el término usado en España (MAEC). Si bien ambos conceptos refieren a traducciones con efectos legales, no son lo mismo. Yo soy traductora pública matriculada en el CTPCBA (no MAEC) para pares inglés ↔ español.',
+    'En Argentina la denominación es traducción pública (Ley 20.305, CTPCBA en CABA). “Traducción jurada” es el término usado en España (MAEC). Si bien ambos conceptos refieren a traducciones con efectos legales, no son lo mismo. En este sitio, la profesional es traductora pública matriculada en el CTPCBA para pares inglés ↔ español.',
   publicVsSimpleTitle: 'Traducción pública vs traducción simple',
   publicVsSimpleBody:
     'La traducción pública es la que se presenta ante organismos públicos o debe tener validez legal. Lleva firma y sello del traductor público y, si corresponde, la legalización del CTPCBA. La traducción simple es para usos privados o informativos y no requiere legalización.',
@@ -20,7 +20,7 @@ const ES = {
     'El CTPCBA certifica la autenticidad de la firma y del sello de la traductora o del traductor público. No certifica el contenido ni los hechos del documento. La legalización puede ser digital (con verificación online) u ológrafa (en papel).',
   orderTitle: 'Orden sugerido del trámite',
   orderSteps: [
-    'Si el documento salió de Argentina y va al exterior: apostillá primero el ORIGINAL (Cancillería TAD o Colegio de Escribanos, según corresponda).',
+    'Si el documento salió de Argentina y va al exterior: apostille primero el ORIGINAL (Cancillería TAD o Colegio de Escribanos, según corresponda).',
     'Traducción pública (inglés ↔ español).',
     'Legalización del CTPCBA de la firma y el sello de la traductora.',
     'Si la legalización del Colegio viaja al exterior: el/la cliente puede apostillarla por TAD (la llamada “segunda apostilla”).',
@@ -30,8 +30,8 @@ const ES = {
   cancilleriaApostille: 'Apostilla TAD – Ministerio de Relaciones Exteriores',
   quoteTitle: 'Honorarios y cotización',
   quoteBody:
-    'Trabajo con los aranceles mínimos sugeridos por el CTPCBA. No copio aquí las grillas oficiales porque cambian con el tiempo. Para cotizar, enviá escaneos o PDFs legibles del documento (y de sus legalizaciones) por el formulario. La cotización es sin cargo.',
-  crossTitle: 'Leé también',
+    'Los honorarios siguen los aranceles mínimos sugeridos por el CTPCBA. No se reproducen aquí las grillas oficiales porque cambian con el tiempo. Para cotizar, envíe escaneos o PDFs legibles del documento (y de sus legalizaciones) por el formulario. La cotización es sin cargo.',
+  crossTitle: 'Lea también',
   crossA: 'Partidas de nacimiento y matrimonio: traducción pública EN↔ES en CABA',
   crossB: 'Títulos universitarios, diplomas y analíticos: traducción pública EN↔ES',
   cta: 'Solicitar cotización gratuita',

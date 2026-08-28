@@ -8,7 +8,7 @@ import { useMemo } from 'react';
 const ES = {
   h1: 'Traducción pública de título universitario y certificado analítico (inglés ↔ español)',
   intro:
-    'Realizo traducciones públicas EN↔ES de títulos, diplomas, certificados analíticos y programas de estudio para trámites de estudio o trabajo en el exterior, o para validez local de títulos extranjeros. Gestiono a pedido la legalización de mi firma y sello ante el CTPCBA.',
+    'Traducciones públicas EN↔ES de títulos, diplomas, certificados analíticos y programas de estudio para trámites de estudio o trabajo en el exterior, o para validez local de títulos extranjeros. A pedido, puede gestionarse la legalización de la firma y del sello de la traductora ante el CTPCBA.',
   scenariosTitle: 'Dos recorridos habituales del trámite',
   scenario1Title: '1) Título argentino que se presenta en el exterior',
   scenario1Steps: [
@@ -25,18 +25,18 @@ const ES = {
     'Legalización del CTPCBA de la firma y el sello de la traductora.',
   ],
   noteApostille:
-    'La apostilla siempre la emite la autoridad competente. Yo no vendo apostillas; traduzco y puedo gestionar la legalización de mi firma ante el CTPCBA.',
+    'La apostilla siempre la emite la autoridad competente. No se comercializan apostillas; se realiza la traducción y puede gestionarse la legalización de la firma ante el CTPCBA.',
   pricingTitle: 'Cotización y plazos',
   pricingBody:
-    'La cotización suele ser por foja. Los certificados analíticos y programas son extensos: esto impacta en el número de fojas. Enviame escaneos o PDFs legibles para presupuestar con precisión. Las cotizaciones son sin cargo y los honorarios siguen los aranceles mínimos del CTPCBA.',
+    'La cotización suele ser por foja. Los certificados analíticos y programas son extensos: esto impacta en el número de fojas. Envíe escaneos o PDFs legibles para presupuestar con precisión. La cotización es sin cargo y los honorarios siguen los aranceles mínimos sugeridos por el CTPCBA.',
   docsTitle: 'Documentación necesaria',
   docsBody:
     'Para cotizar: título/diploma (frente y dorso si corresponde), certificado analítico completo, programas si los pide la institución y toda legalización/apostilla previa. Los documentos digitales con firma/verificación electrónica también se traducen con su validación.',
-  crossTitle: 'También te puede interesar',
+  crossTitle: 'También puede interesarle',
   crossA: 'Partidas de nacimiento y matrimonio: traducción pública EN↔ES en CABA',
   crossB: 'Traducción pública, legalización CTPCBA y apostilla: el orden del trámite',
   cta: 'Solicitar cotización gratuita',
-  ctaHint: 'En el formulario, elegí “Documentos Académicos”.',
+  ctaHint: 'En el formulario, seleccione “Documentos Académicos”.',
   breadcrumbBlog: 'Blog',
   metaAuthor: 'María E. Lo Bianco',
 };

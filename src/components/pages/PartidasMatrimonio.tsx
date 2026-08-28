@@ -8,7 +8,7 @@ import { useMemo } from 'react';
 const ES = {
   h1: 'Traducción pública de partidas de nacimiento y matrimonio (inglés ↔ español) en CABA',
   intro:
-    'Si tenés que presentar una partida de nacimiento o de matrimonio en la Argentina o en el exterior, necesitás una traducción pública: realizada por una traductora pública matriculada que certifica su fidelidad con firma y sello. Trabajo del inglés al español y del español al inglés, con legalización ante el CTPCBA a pedido.',
+    'Si necesita presentar una partida de nacimiento o de matrimonio en la Argentina o en el exterior, requiere una traducción pública: realizada por una traductora pública matriculada que certifica su fidelidad con firma y sello. En estas gestiones también se habla de certificado/acta de nacimiento o matrimonio. A pedido, se gestiona la legalización de la firma y el sello ante el CTPCBA.',
   whenTitle: '¿Cuándo se requiere traducción pública?',
   whenList: [
     'Trámites de migraciones, ciudadanía y visas.',
@@ -18,21 +18,21 @@ const ES = {
   ],
   docsTitle: 'Documentación y formato',
   docsBody:
-    'Para cotizar con precisión, enviá escaneos nítidos o fotos legibles de las partidas completas (anverso y reverso si corresponde). Si hay apostilla o legalizaciones previas, incluí esas páginas también. Las partidas digitales con firma y validación electrónica también se traducen con su verificación.',
+    'Para cotizar con precisión, envíe escaneos nítidos o fotos legibles de las partidas completas (anverso y reverso si corresponde). Si hay apostilla o legalizaciones previas, incluya esas páginas también. Las partidas digitales con firma y validación electrónica también se traducen con su verificación.',
   abroadTitle: '¿El documento va al exterior? Orden del trámite (apostilla y legalización)',
   abroadBody:
-    'Si la partida se va a presentar fuera de la Argentina, primero se apostilla el ORIGINAL en el país emisor (en Argentina, a través de la Cancillería por TAD o en el Colegio de Escribanos según el caso). Luego se realiza la traducción pública y, si lo necesitás, gestiono la legalización de mi firma y sello ante el CTPCBA. Recordá que la apostilla la emite la autoridad competente; yo no vendo apostillas.',
+    'Si la partida se va a presentar fuera de la Argentina, primero se apostilla el ORIGINAL en el país emisor (en Argentina, a través de la Cancillería por TAD o en el Colegio de Escribanos, según el caso). Luego se realiza la traducción pública y, si corresponde, puede gestionarse la legalización de la firma y del sello de la traductora ante el CTPCBA. Recuerde que la apostilla la emite la autoridad competente; no se comercializan apostillas.',
   abroadLinksIntro: 'Recursos oficiales:',
   ctpcbaLegal:
     'Legalización del CTPCBA: certifica la firma y el sello de la traductora, no el contenido del documento. Puede ser digital (con verificación online) u ológrafa (en papel).',
   verifyTitle: 'Cómo verificar la matrícula',
   verifyBody:
-    'En la página principal vas a encontrar el código QR del CTPCBA para verificar la matrícula activa. También podés buscar por nombre y matrícula en el sitio del Colegio.',
+    'En la página principal encontrará el código QR del CTPCBA para verificar la matrícula activa. También puede buscar por nombre y matrícula en el sitio del Colegio.',
   quoteTitle: '¿Cómo pido una cotización?',
   quoteBody:
-    'Enviá las imágenes o PDFs por el formulario con tu nombre, email y una breve descripción del trámite. Respondé con claridad si necesitás legalización del CTPCBA. Las partidas suelen cotizarse por foja. Las cotizaciones son sin cargo y los honorarios siguen los aranceles mínimos del CTPCBA.',
+    'Envíe las imágenes o PDFs por el formulario con su nombre, email y una breve descripción del trámite. Indique si requiere legalización del CTPCBA. Las partidas suelen cotizarse por foja. La cotización es sin cargo y los honorarios siguen los aranceles mínimos sugeridos por el CTPCBA.',
   deathNote:
-    'Nota: también traduzco partidas de defunción cuando corresponda al trámite. Consultame por tu caso puntual.',
+    'Nota: también se traducen partidas/actas de defunción cuando corresponda al trámite. Consulte por su caso puntual.',
   cta: 'Solicitar cotización gratuita',
   crossTitle: 'Otras páginas que te pueden servir',
   crossA: 'Traducción pública de título universitario y certificado analítico',
@@ -168,7 +168,7 @@ export default function PartidasMatrimonioContent() {
         <p className="text-sm text-gray-600 mt-2">
           {language === 'en'
             ? 'Select “Personal Documents” in the form.'
-            : 'En el formulario, elegí “Documentos Personales”.'}
+            : 'En el formulario, seleccione “Documentos Personales”.'}
         </p>
       </div>
 

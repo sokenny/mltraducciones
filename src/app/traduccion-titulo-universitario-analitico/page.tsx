@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   description:
     'Traducción pública de títulos, diplomas, certificados analíticos y programas. EN↔ES. Legalización CTPCBA a pedido. Cotización por foja. No se homologa el título.',
   alternates: {
+    canonical: '/traduccion-titulo-universitario-analitico/',
     languages: {
       en: '/traduccion-titulo-universitario-analitico',
       es: '/traduccion-titulo-universitario-analitico',
@@ -21,6 +22,8 @@ export const metadata: Metadata = {
       'Pack académico: título, diploma, analítico y programas. EN↔ES. Legalización CTPCBA a pedido. Cotiza por foja.',
     type: 'article',
     locale: 'es_AR',
+    url: 'https://www.ml-traducciones.com/traduccion-titulo-universitario-analitico/',
+    images: ['/favicon.svg'],
   },
 };
 
