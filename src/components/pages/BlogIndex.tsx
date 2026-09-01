@@ -40,6 +40,39 @@ export default function BlogIndexContent() {
           ? 'What CTPCBA certifies, digital vs paper legalization, apostille via TAD.'
           : 'Qué certifica el CTPCBA, legalización digital vs ológrafa y apostilla por TAD.',
     },
+    {
+      href: '/traduccion-antecedentes-penales',
+      title:
+        language === 'en'
+          ? 'Sworn translation of criminal record certificates (RNR) — EN↔ES'
+          : 'Traducción pública de antecedentes penales (RNR) — EN↔ES',
+      desc:
+        language === 'en'
+          ? 'Visas, residency, citizenship and work. Order: apostille, sworn translation, optional CTPCBA legalization.'
+          : 'Visas, residencia, ciudadanía y trabajo. Orden: apostilla, traducción pública y legalización CTPCBA opcional.',
+    },
+    {
+      href: '/traduccion-poderes-estatutos-societarios',
+      title:
+        language === 'en'
+          ? 'Sworn translation of powers of attorney and bylaws — EN↔ES'
+          : 'Traducción pública de poderes y estatutos societarios — EN↔ES',
+      desc:
+        language === 'en'
+          ? 'General/special PoAs, bylaws, incorporation and minutes for corporate/legal use.'
+          : 'Poderes generales/especiales, estatutos, constitutivas y actas para uso societario/legal.',
+    },
+    {
+      href: '/traduccion-contratos',
+      title:
+        language === 'en'
+          ? 'Sworn translation of contracts — EN↔ES'
+          : 'Traducción pública de contratos — EN↔ES',
+      desc:
+        language === 'en'
+          ? 'Lease, services, distribution, sale and purchase. Commercial/legal intent.'
+          : 'Alquiler, servicios, distribución, compraventa. Enfoque jurídico/comercial.',
+    },
   ];
 
   return (
