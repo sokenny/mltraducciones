@@ -24,6 +24,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.8,
     },
+    {
+      url: `${base}/traduccion-antecedentes-penales/`,
+      lastModified: lastmod,
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: `${base}/traduccion-poderes-estatutos-societarios/`,
+      lastModified: lastmod,
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: `${base}/traduccion-contratos/`,
+      lastModified: lastmod,
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
   ];
 }
 
