@@ -159,7 +159,15 @@ export default function PartidasMatrimonioContent() {
       <h2 className="heading-3 mt-10">{t.verifyTitle}</h2>
       <p className="text-gray-700">{t.verifyBody}</p>
 
-      <p className="text-gray-700 mt-6 italic">{t.deathNote}</p>
+      <p className="text-gray-700 mt-6 italic">
+        {language === 'en' ? 'Note: I also translate ' : 'Nota: también se traducen ' }
+        <Link className="text-sunflower-700 underline" href="/traduccion-partida-defuncion">
+          {language === 'en' ? 'death certificates' : 'partidas/actas de defunción'}
+        </Link>
+        {language === 'en'
+          ? ' when required by the process. Feel free to ask about your specific case.'
+          : ' cuando corresponda al trámite. Consulte por su caso puntual.'}
+      </p>
 
       <div className="mt-10">
         <a href="/#contact" className="btn-primary">
