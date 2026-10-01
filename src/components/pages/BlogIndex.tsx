@@ -74,37 +74,37 @@ export default function BlogIndexContent() {
           : 'Alquiler, servicios, distribución, compraventa. Enfoque jurídico/comercial.',
     },
     {
-      href: '/traduccion-partida-defuncion',
+      href: '/traduccion-permiso-viaje-menores',
       title:
         language === 'en'
-          ? 'Sworn translation of death certificates — EN↔ES'
-          : 'Traducción pública de partida/acta de defunción — EN↔ES',
+          ? 'Sworn translation of parental travel authorizations for minors — EN↔ES'
+          : 'Traducción pública de autorización/permiso de viaje de menores — EN↔ES',
       desc:
         language === 'en'
-          ? 'Probate, insurance, consular/Civil Registry inscriptions. Order: apostille, sworn translation, optional CTPCBA legalization.'
-          : 'Sucesiones, seguros, inscripciones consulares/Registro Civil. Orden: apostilla, traducción pública y legalización CTPCBA opcional.',
+          ? 'Parental authorizations and travel consent forms. Apostille by competent authority; sworn EN↔ES; optional CTPCBA legalization.'
+          : 'Autorizaciones parentales y formularios de viaje. Apostilla por autoridad competente; traducción EN↔ES; legalización CTPCBA opcional.',
     },
     {
-      href: '/traduccion-sentencia-divorcio',
+      href: '/traduccion-certificado-solteria-estado-civil',
       title:
         language === 'en'
-          ? 'Sworn translation of divorce judgments/decrees — EN↔ES'
-          : 'Traducción pública de sentencia de divorcio — EN↔ES',
+          ? 'Sworn translation of single-status/civil status certificates — EN↔ES'
+          : 'Traducción pública de certificado de soltería / estado civil — EN↔ES',
       desc:
         language === 'en'
-          ? 'Remarriage, citizenship/immigration, Civil Registry. Judgment vs marginal note: practical guidance.'
-          : 'Rematrimonio, ciudadanía/inmigración y Registro Civil. Sentencia vs anotación marginal: orientación práctica.',
+          ? 'For marriage abroad, embassies and civil filings. Apostille of originals; sworn EN↔ES; optional CTPCBA.'
+          : 'Para matrimonio en el exterior, embajadas y presentaciones civiles. Apostilla del ORIGINAL; traducción EN↔ES; legalización CTPCBA opcional.',
     },
     {
-      href: '/traduccion-publica-migraciones-residencia',
+      href: '/traduccion-titulo-secundario-analitico',
       title:
         language === 'en'
-          ? 'Sworn translations for residency / immigration — EN↔ES'
-          : 'Traducción pública para residencia / Migraciones — EN↔ES',
+          ? 'Sworn translation of secondary diplomas/certificates/transcripts — EN↔ES'
+          : 'Traducción pública de título/certificado/analítico de estudios secundarios — EN↔ES',
       desc:
         language === 'en'
-          ? 'Foreign documents for residency: sworn translations by a licensed translator and guide links.'
-          : 'Documentación extranjera para residencias: traducción pública por traductora matriculada y enlaces a guías.',
+          ? 'High‑school diplomas and transcripts. Apostille of originals; sworn EN↔ES; optional CTPCBA.'
+          : 'Bachiller: títulos y analíticos. Apostilla del ORIGINAL; traducción EN↔ES; legalización CTPCBA opcional.',
     },
   ];
 

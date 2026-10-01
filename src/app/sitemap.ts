@@ -43,19 +43,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
-      url: `${base}/traduccion-partida-defuncion/`,
+      url: `${base}/traduccion-permiso-viaje-menores/`,
       lastModified: lastmod,
       changeFrequency: 'monthly',
       priority: 0.8,
     },
     {
-      url: `${base}/traduccion-sentencia-divorcio/`,
+      url: `${base}/traduccion-certificado-solteria-estado-civil/`,
       lastModified: lastmod,
       changeFrequency: 'monthly',
       priority: 0.8,
     },
     {
-      url: `${base}/traduccion-publica-migraciones-residencia/`,
+      url: `${base}/traduccion-titulo-secundario-analitico/`,
       lastModified: lastmod,
       changeFrequency: 'monthly',
       priority: 0.8,
