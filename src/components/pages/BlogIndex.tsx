@@ -73,6 +73,39 @@ export default function BlogIndexContent() {
           ? 'Lease, services, distribution, sale and purchase. Commercial/legal intent.'
           : 'Alquiler, servicios, distribución, compraventa. Enfoque jurídico/comercial.',
     },
+    {
+      href: '/traduccion-permiso-viaje-menores',
+      title:
+        language === 'en'
+          ? 'Sworn translation of parental travel authorizations for minors — EN↔ES'
+          : 'Traducción pública de autorización/permiso de viaje de menores — EN↔ES',
+      desc:
+        language === 'en'
+          ? 'Parental authorizations and travel consent forms. Apostille by competent authority; sworn EN↔ES; optional CTPCBA legalization.'
+          : 'Autorizaciones parentales y formularios de viaje. Apostilla por autoridad competente; traducción EN↔ES; legalización CTPCBA opcional.',
+    },
+    {
+      href: '/traduccion-certificado-solteria-estado-civil',
+      title:
+        language === 'en'
+          ? 'Sworn translation of single-status/civil status certificates — EN↔ES'
+          : 'Traducción pública de certificado de soltería / estado civil — EN↔ES',
+      desc:
+        language === 'en'
+          ? 'For marriage abroad, embassies and civil filings. Apostille of originals; sworn EN↔ES; optional CTPCBA.'
+          : 'Para matrimonio en el exterior, embajadas y presentaciones civiles. Apostilla del ORIGINAL; traducción EN↔ES; legalización CTPCBA opcional.',
+    },
+    {
+      href: '/traduccion-titulo-secundario-analitico',
+      title:
+        language === 'en'
+          ? 'Sworn translation of secondary diplomas/certificates/transcripts — EN↔ES'
+          : 'Traducción pública de título/certificado/analítico de estudios secundarios — EN↔ES',
+      desc:
+        language === 'en'
+          ? 'High‑school diplomas and transcripts. Apostille of originals; sworn EN↔ES; optional CTPCBA.'
+          : 'Bachiller: títulos y analíticos. Apostilla del ORIGINAL; traducción EN↔ES; legalización CTPCBA opcional.',
+    },
   ];
 
   return (

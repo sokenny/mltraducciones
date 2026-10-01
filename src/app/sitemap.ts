@@ -42,6 +42,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.8,
     },
+    {
+      url: `${base}/traduccion-permiso-viaje-menores/`,
+      lastModified: lastmod,
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: `${base}/traduccion-certificado-solteria-estado-civil/`,
+      lastModified: lastmod,
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: `${base}/traduccion-titulo-secundario-analitico/`,
+      lastModified: lastmod,
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
   ];
 }
 
