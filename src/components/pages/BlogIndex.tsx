@@ -139,6 +139,39 @@ export default function BlogIndexContent() {
           ? 'Deeds (sale/mortgage) and notarial acts. Apostille by competent authority; sworn EN↔ES; optional CTPCBA legalization.'
           : 'Escrituras (compraventa/hipoteca) y actas. Apostilla por autoridad competente; traducción EN↔ES; legalización CTPCBA opcional.',
     },
+    {
+      href: '/traduccion-partida-defuncion',
+      title:
+        language === 'en'
+          ? 'Sworn translation of death certificates — EN↔ES'
+          : 'Traducción pública de partida/acta de defunción — EN↔ES',
+      desc:
+        language === 'en'
+          ? 'Probate, insurance, consular/Civil Registry inscriptions. Order: apostille, sworn translation, optional CTPCBA legalization.'
+          : 'Sucesiones, seguros, inscripciones consulares/Registro Civil. Orden: apostilla, traducción pública y legalización CTPCBA opcional.',
+    },
+    {
+      href: '/traduccion-sentencia-divorcio',
+      title:
+        language === 'en'
+          ? 'Sworn translation of divorce judgments/decrees — EN↔ES'
+          : 'Traducción pública de sentencia de divorcio — EN↔ES',
+      desc:
+        language === 'en'
+          ? 'Remarriage, citizenship/immigration, Civil Registry. Judgment vs marginal note: practical guidance.'
+          : 'Rematrimonio, ciudadanía/inmigración y Registro Civil. Sentencia vs anotación marginal: orientación práctica.',
+    },
+    {
+      href: '/traduccion-publica-migraciones-residencia',
+      title:
+        language === 'en'
+          ? 'Sworn translations for residency / immigration — EN↔ES'
+          : 'Traducción pública para residencia / Migraciones — EN↔ES',
+      desc:
+        language === 'en'
+          ? 'Foreign documents for residency: sworn translations by a licensed translator and guide links.'
+          : 'Documentación extranjera para residencias: traducción pública por traductora matriculada y enlaces a guías.',
+    },
   ];
 
   return (
