@@ -106,6 +106,39 @@ export default function BlogIndexContent() {
           ? 'High‑school diplomas and transcripts. Apostille of originals; sworn EN↔ES; optional CTPCBA.'
           : 'Bachiller: títulos y analíticos. Apostilla del ORIGINAL; traducción EN↔ES; legalización CTPCBA opcional.',
     },
+    {
+      href: '/traduccion-pasaporte-dni-identidad',
+      title:
+        language === 'en'
+          ? 'Sworn translation of passports and IDs — EN↔ES'
+          : 'Traducción pública de pasaporte, DNI y documentos de identidad — EN↔ES',
+      desc:
+        language === 'en'
+          ? 'Visas, banking, foreign authorities. Notarized copies often precede apostille; sworn EN↔ES; optional CTPCBA legalization.'
+          : 'Visas, bancos, autoridades del exterior. Copias suelen certificarse ante escribano antes de apostillar; traducción EN↔ES; legalización CTPCBA opcional.',
+    },
+    {
+      href: '/traduccion-testamento',
+      title:
+        language === 'en'
+          ? 'Sworn translation of wills for probate — EN↔ES'
+          : 'Traducción pública de testamentos para sucesión — EN↔ES',
+      desc:
+        language === 'en'
+          ? 'For probate/courts and notaries. Apostille of originals by competent authority; sworn EN↔ES; optional CTPCBA.'
+          : 'Para sucesiones/juzgados y escribanos. Apostilla del ORIGINAL por autoridad competente; traducción EN↔ES; legalización CTPCBA opcional.',
+    },
+    {
+      href: '/traduccion-escrituras-actas-notariales',
+      title:
+        language === 'en'
+          ? 'Sworn translation of notarial deeds and acts — EN↔ES'
+          : 'Traducción pública de escrituras y actas notariales — EN↔ES',
+      desc:
+        language === 'en'
+          ? 'Deeds (sale/mortgage) and notarial acts. Apostille by competent authority; sworn EN↔ES; optional CTPCBA legalization.'
+          : 'Escrituras (compraventa/hipoteca) y actas. Apostilla por autoridad competente; traducción EN↔ES; legalización CTPCBA opcional.',
+    },
   ];
 
   return (
