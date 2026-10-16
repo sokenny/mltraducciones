@@ -60,6 +60,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.8,
     },
+    {
+      url: `${base}/traduccion-pasaporte-dni-identidad/`,
+      lastModified: lastmod,
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: `${base}/traduccion-testamento/`,
+      lastModified: lastmod,
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: `${base}/traduccion-escrituras-actas-notariales/`,
+      lastModified: lastmod,
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
   ];
 }
 
