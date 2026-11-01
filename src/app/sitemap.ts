@@ -78,6 +78,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.8,
     },
+    {
+      url: `${base}/traduccion-licencia-conducir-extranjera/`,
+      lastModified: lastmod,
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: `${base}/traduccion-documentos-laborales-bancarios/`,
+      lastModified: lastmod,
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: `${base}/cuanto-cuesta-traduccion-publica/`,
+      lastModified: lastmod,
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
   ];
 }
 

@@ -139,6 +139,39 @@ export default function BlogIndexContent() {
           ? 'Deeds (sale/mortgage) and notarial acts. Apostille by competent authority; sworn EN↔ES; optional CTPCBA legalization.'
           : 'Escrituras (compraventa/hipoteca) y actas. Apostilla por autoridad competente; traducción EN↔ES; legalización CTPCBA opcional.',
     },
+    {
+      href: '/traduccion-licencia-conducir-extranjera',
+      title:
+        language === 'en'
+          ? 'Sworn translation of foreign driver’s licenses and legal status certificates — EN↔ES'
+          : 'Traducción pública de licencia de conducir extranjera y certificado de legalidad — EN↔ES',
+      desc:
+        language === 'en'
+          ? 'Exchange/renewal in Buenos Aires and use abroad. Foreign documents: apostille/consular validation and sworn EN↔ES translation.'
+          : 'Canje/renovación en CABA y uso en el exterior. Documentación extranjera: apostilla/validación consular y traducción pública EN↔ES.',
+    },
+    {
+      href: '/traduccion-documentos-laborales-bancarios',
+      title:
+        language === 'en'
+          ? 'Sworn translation of employment and banking documents — EN↔ES'
+          : 'Traducción pública de documentos laborales y bancarios — EN↔ES',
+      desc:
+        language === 'en'
+          ? 'Employment letters, pay slips, proof of income/registration, bank statements and references. Confirm recipient requirements.'
+          : 'Certificados de trabajo, recibos de sueldo, constancias, extractos y referencias. Verificá requisitos con el organismo.',
+    },
+    {
+      href: '/cuanto-cuesta-traduccion-publica',
+      title:
+        language === 'en'
+          ? 'How much does a sworn translation cost in Buenos Aires?'
+          : '¿Cuánto cuesta una traducción pública en Buenos Aires?',
+      desc:
+        language === 'en'
+          ? 'Pricing factors and how to get a fast quote. No specific fees or timelines published.'
+          : 'Factores de precio y cómo cotizar rápido. Sin publicar importes ni plazos.',
+    },
   ];
 
   return (
