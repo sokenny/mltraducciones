@@ -96,6 +96,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.8,
     },
+    {
+      url: `${base}/traduccion-convalidacion-titulo-extranjero/`,
+      lastModified: lastmod,
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: `${base}/traduccion-balances-estados-contables/`,
+      lastModified: lastmod,
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: `${base}/traduccion-informes-medicos-historia-clinica/`,
+      lastModified: lastmod,
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
   ];
 }
 
