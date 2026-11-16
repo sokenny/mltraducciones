@@ -33,7 +33,8 @@ const ES = {
   docsBody:
     'Para cotizar: título/diploma (frente y dorso si corresponde), certificado analítico completo, programas si los pide la institución y toda legalización/apostilla previa. Los documentos digitales con firma/verificación electrónica también se traducen con su validación.',
   crossTitle: 'También puede interesarle',
-  crossA: 'Partidas de nacimiento y matrimonio: traducción pública EN↔ES en CABA',
+  crossA: 'Convalidación/revalidación: traducción al español de título extranjero',
+  crossALink: '/traduccion-convalidacion-titulo-extranjero',
   crossB: 'Traducción pública, legalización CTPCBA y apostilla: el orden del trámite',
   cta: 'Solicitar cotización gratuita',
   ctaHint: 'En el formulario, seleccione “Documentos Académicos”.',
@@ -69,7 +70,8 @@ const EN = {
   docsBody:
     'For quoting: degree/diploma (front and back where applicable), full transcript, syllabi if required by the institution, and any prior legalization/apostille. Digital documents with electronic signature/verification can also be translated with their validation.',
   crossTitle: 'You may also like',
-  crossA: 'Birth and marriage certificates: sworn translation EN↔ES in Buenos Aires',
+  crossA: 'Recognition in Argentina: Spanish sworn translation of foreign degrees',
+  crossALink: '/traduccion-convalidacion-titulo-extranjero',
   crossB: 'Sworn translation, CTPCBA legalization and apostille: order of steps',
   cta: 'Request a free quote',
   ctaHint: 'Select “Academic Documents” in the form.',
@@ -156,10 +158,7 @@ export default function TitulosAnaliticoContent() {
       <h3 className="heading-4 mb-4">{t.crossTitle}</h3>
       <ul className="list-disc pl-6">
         <li>
-          <Link
-            className="text-sunflower-700 underline"
-            href="/traduccion-partida-nacimiento-matrimonio"
-          >
+          <Link className="text-sunflower-700 underline" href={t.crossALink}>
             {t.crossA}
           </Link>
         </li>
