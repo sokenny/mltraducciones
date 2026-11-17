@@ -172,6 +172,39 @@ export default function BlogIndexContent() {
           ? 'Pricing factors and how to get a fast quote. No specific fees or timelines published.'
           : 'Factores de precio y cómo cotizar rápido. Sin publicar importes ni plazos.',
     },
+    {
+      href: '/traduccion-convalidacion-titulo-extranjero',
+      title:
+        language === 'en'
+          ? 'Sworn translation to Spanish for foreign degree recognition'
+          : 'Convalidación/revalidación: traducción al español de título extranjero',
+      desc:
+        language === 'en'
+          ? 'Degrees, transcripts and syllabi issued in English → Spanish sworn translation for use in Argentina.'
+          : 'Títulos, analíticos y programas emitidos en inglés → traducción pública al español para uso en Argentina.',
+    },
+    {
+      href: '/traduccion-balances-estados-contables',
+      title:
+        language === 'en'
+          ? 'Sworn translation of financial statements and audit reports — EN↔ES'
+          : 'Traducción pública de balances y estados contables — EN↔ES',
+      desc:
+        language === 'en'
+          ? 'For banks, IGJ, HQs, investors and tenders. CTPCBA legalization upon request.'
+          : 'Para bancos, IGJ, casas matrices, inversores y licitaciones. CTPCBA a pedido.',
+    },
+    {
+      href: '/traduccion-informes-medicos-historia-clinica',
+      title:
+        language === 'en'
+          ? 'Sworn translation of medical records and reports — EN↔ES'
+          : 'Traducción pública de informes médicos e historia clínica — EN↔ES',
+      desc:
+        language === 'en'
+          ? 'For treatment abroad, insurance/reimbursements, visas, studies and procedures.'
+          : 'Para tratamientos en el exterior, seguros/reintegros, visas, estudios y trámites.',
+    },
   ];
 
   return (
